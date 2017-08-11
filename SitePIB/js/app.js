@@ -13,9 +13,13 @@ app.config(['$routeProvider', function ($routeProvider) {
     // Home
     .when("/", {templateUrl: "partials/home.html", controller: "HomeController"})
 
+    //Parceiros
+    .when("/abni", {templateUrl: "partials/abni_detalhe.html", controller: "HomeController"})
+    .when("/canaa", {templateUrl: "partials/canaa_detalhe.html", controller: "HomeController"})
+
     // Eventos
     .when("/igreja/detalhe", {templateUrl: "partials/church-story-single.html", controller: "HomeController"})
-    .when("/igreja/detalhe/generica", {templateUrl: "partials/church-story-single.html", controller: "HomeController"})
+    .when("/igreja/detalhe/generica", {templateUrl: "partials/church-story-single-generica.html", controller: "HomeController"})
 
     // Eventos
     .when("/eventos", {templateUrl: "partials/events-grid.html", controller: "EventoController"})
@@ -36,6 +40,8 @@ app.config(['$routeProvider', function ($routeProvider) {
 
     //Contato
     .when("/contato", {templateUrl: "partials/contact.html", controller: "ContatoController"})
+
+
 
     // else 404
     .otherwise("/404", {templateUrl: "partials/404.html", controller: "GenericPageCtrl"});
