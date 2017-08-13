@@ -11,38 +11,36 @@ var app = angular.module('PIBWebApp', [
 app.config(['$routeProvider', function ($routeProvider) {
   $routeProvider
     // Home
-    .when("/", {templateUrl: "partials/home.html", controller: "HomeController"})
+    .when("/", {templateUrl: "partials/home.html", controller: "HomeController", cache: false})
 
     //Parceiros
-    .when("/abni", {templateUrl: "partials/abni_detalhe.html", controller: "HomeController"})
-    .when("/canaa", {templateUrl: "partials/canaa_detalhe.html", controller: "HomeController"})
+    .when("/abni", {templateUrl: "partials/abni_detalhe.html", controller: "HomeController", cache: false})
+    .when("/canaa", {templateUrl: "partials/canaa_detalhe.html", controller: "HomeController", cache: false})
 
     // Eventos
-    .when("/igreja/detalhe", {templateUrl: "partials/church-story-single.html", controller: "HomeController"})
-    .when("/igreja/detalhe/generica", {templateUrl: "partials/church-story-single-generica.html", controller: "HomeController"})
+    .when("/igreja/detalhe", {templateUrl: "partials/church-story-single.html", controller: "HomeController", cache: false})
+    .when("/igreja/detalhe/generica", {templateUrl: "partials/church-story-single-generica.html", controller: "HomeController", cache: false})
 
     // Eventos
-    .when("/eventos", {templateUrl: "partials/events-grid.html", controller: "EventoController"})
-    .when("/eventos/mulheres", {templateUrl: "partials/event-cong-mulheres.html", controller: "GenericPageCtrl"})
+    .when("/eventos", {templateUrl: "partials/events-grid.html", controller: "EventoController", cache: false})
+    .when("/eventos/mulheres", {templateUrl: "partials/event-cong-mulheres.html", controller: "GenericPageCtrl", cache: false})
 
     //Galeria
-    .when("/galeria", {templateUrl: "partials/gallery.html", controller: "GaleriaController"})
+    .when("/galeria", {templateUrl: "partials/gallery.html", controller: "GaleriaController", cache: false})
 
     //Sermoes
-    .when("/sermoes", {templateUrl: "partials/sermon.html", controller: "SermoesController"})
+    .when("/sermoes", {templateUrl: "partials/sermon.html", controller: "SermoesController", cache: false})
 
     //Ministerios
-    .when("/ministerios", {templateUrl: "partials/ministry.html", controller: "MinisterioController"})
-    .when("/ministerios/detalhe", {templateUrl: "partials/ministry-single.html", controller: "MinisterioController"})
+    .when("/ministerios", {templateUrl: "partials/ministry.html", controller: "MinisterioController", cache: false})
+    .when("/ministerios/detalhe", {templateUrl: "partials/ministry-single.html", controller: "MinisterioController", cache: false})
 
     //Igreja
-    .when("/igreja", {templateUrl: "partials/about.html", controller: "AboutController"})
+    .when("/igreja", {templateUrl: "partials/about.html", controller: "AboutController", cache: false})
 
     //Contato
-    .when("/contato", {templateUrl: "partials/contact.html", controller: "ContatoController"})
-
-
+    .when("/contato", {templateUrl: "partials/contact.html", controller: "ContatoController", cache: false})
 
     // else 404
-    .otherwise("/404", {templateUrl: "partials/404.html", controller: "GenericPageCtrl"});
+    .otherwise("/404", {templateUrl: "partials/404.html", controller: "GenericPageCtrl", cache: false});
 }]);
