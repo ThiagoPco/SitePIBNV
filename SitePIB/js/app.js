@@ -11,7 +11,7 @@ var app = angular.module('PIBWebApp', [
 app.config(['$routeProvider', function ($routeProvider) {
   $routeProvider
     // Home
-    .when("/", {templateUrl: "partials/home.html", controller: "HomeController", cache: false})
+    .when("/", {templateUrl: "partials/home.html", controller: "HomeController"})
 
     //Parceiros
     .when("/abni", {templateUrl: "partials/abni_detalhe.html", controller: "HomeController", cache: false})
