@@ -31,6 +31,9 @@ app.config(['$routeProvider', function ($routeProvider) {
     //Sermoes
     .when("/sermoes", {templateUrl: "partials/sermon.html", controller: "SermoesController", cache: false})
 
+    //Agenda Semanal
+    .when("/agenda", {templateUrl: "partials/agenda.html", controller: "AgendaController", cache: false})
+
     //Ministerios
     .when("/ministerios", {templateUrl: "partials/ministry.html", controller: "MinisterioController", cache: false})
     .when("/ministerios/detalhe", {templateUrl: "partials/ministry-single.html", controller: "MinisterioController", cache: false})

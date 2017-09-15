@@ -17,35 +17,35 @@ $(".responsive-search").on("click",function(){
     $(".responsive-search > form").slideToggle();
 });
 $('.headercounter').downCount({
-    date: '06/25/2016 12:00:00',
+    date: '12/31/2017 23:59:00',
     offset: +10
 });
 
 
-$('.fullwidth-carousel').parent().parent().parent().addClass("expand");        
+$('.fullwidth-carousel').parent().parent().parent().addClass("expand");
 
-$('.top-adds').parent().parent().parent().addClass("expand");        
+$('.top-adds').parent().parent().parent().addClass("expand");
 
 
-	
+
 $('.audio-btn').click(function(){
-	$('.audioplayer').slideUp();		
-	$(this).next('.audioplayer').slideDown();	
+	$('.audioplayer').slideUp();
+	$(this).next('.audioplayer').slideDown();
 	return false;
 })
 
 $('.cross').click(function(){
-	$(this).parent().slideUp();		
-    $('.sermon-media li i.audio-btn').removeClass('active');         
+	$(this).parent().slideUp();
+    $('.sermon-media li i.audio-btn').removeClass('active');
 })
 
 
 $('.sermon-media li i.audio-btn').click(function() {
-    $('.sermon-media li i.audio-btn').removeClass('active');         
-    $(this).addClass('active');     
+    $('.sermon-media li i.audio-btn').removeClass('active');
+    $(this).addClass('active');
 });
 
-/*** ACCORDIONS ***/	
+/*** ACCORDIONS ***/
 $(function() {
     $('#toggle .content').hide();
     $('#toggle h2:first').addClass('active').next().slideDown(500).parent().addClass("activate");
@@ -57,16 +57,16 @@ $(function() {
     });
 });
 
-/*** SCROLLER ***/ 
+/*** SCROLLER ***/
 
 $('.responsive-menu').enscroll();
 
-/*** CART PAGE PRODUCT DELETE ***/      
+/*** CART PAGE PRODUCT DELETE ***/
     $('.cart-product .dustbin').click(function() {
         $(this).parent().parent().parent().slideUp();
     });
 
-/*** BILLING ADDRESS AND SHIPPING ADDRESS ***/      
+/*** BILLING ADDRESS AND SHIPPING ADDRESS ***/
     $('.billing-add').click(function() {
         $('.billing-address').slideDown(1000);
         $('.shipping-address').slideUp(1000);
@@ -75,17 +75,17 @@ $('.responsive-menu').enscroll();
         $('.shipping-address').slideDown(1000);
         $('.billing-address').slideUp(1000);
     });
-    
-/*** CHECKOUT PAGE BLOCKS ***/      
+
+/*** CHECKOUT PAGE BLOCKS ***/
     $('.checkout-block h5').click(function() {
         $(this).toggleClass('closed');
         $(this).next('.checkout-content').slideToggle();
     });
 
 
- 
 
-/*** PASTORS CAROUSEL ***/      
+
+/*** PASTORS CAROUSEL ***/
     $('.pastors-carousel').parent().parent().parent().removeClass("container");
     $('.pastors-carousel').parent().parent().parent().parent().removeClass("block");
 
@@ -94,12 +94,12 @@ $('.responsive-menu').enscroll();
 
 
 
-/*** HEADER CART DROPDOWN ***/ 
+/*** HEADER CART DROPDOWN ***/
 $('.cart-dropdown > p').click(function(){
-    $(this).next("ul").slideToggle("slow");     
+    $(this).next("ul").slideToggle("slow");
 });
 
-/*** HEADER CART CLOSE BY CLICKING OUTSIDE ***/ 
+/*** HEADER CART CLOSE BY CLICKING OUTSIDE ***/
   $('.cart-dropdown').click(function(e){
      e.stopPropagation();
   });
@@ -109,16 +109,16 @@ $('.cart-dropdown > p').click(function(){
     });
   });
 
-/*** HEADER CART ITEM REMOVE ***/ 
+/*** HEADER CART ITEM REMOVE ***/
 $('.cart-dropdown > ul li span.remove').click(function(){
-    $(this).parent().slideUp("slow");     
+    $(this).parent().slideUp("slow");
 });
 
 
 
-    
-/*** STICKY HEADER ***/ 
-$(window).scroll(function() {    
+
+/*** STICKY HEADER ***/
+$(window).scroll(function() {
     var scroll = $(window).scrollTop();
     if (scroll >= 70) {
         $(".stick").addClass("sticky");
@@ -126,10 +126,10 @@ $(window).scroll(function() {
     else{
         $(".stick").removeClass("sticky");
     }
-}); 
-    
-    
- /*** FIXED OR STATIC HEADER ON CLICK ***/      
+});
+
+
+ /*** FIXED OR STATIC HEADER ON CLICK ***/
 $(".sticky").click( function(){
     $("header").addClass("stick");
     return false;
@@ -139,74 +139,74 @@ $(".non-sticky").click( function(){
     $("header").removeClass("sticky");
     return false;
 });
-   
+
 
 
 $(".header1-btn").click( function(){
     $("header").attr('class',"");
     $(".page-top").addClass('extra-gap');
     return false;
-});    
+});
 $(".header2-btn").click( function(){
     $("header").attr('class',"");
     $("header").addClass('header2');
     $(".page-top").removeClass('extra-gap');
     return false;
-});    
+});
 $(".header3-btn").click( function(){
     $("header").attr('class',"");
     $("header").addClass('header3');
     $(".page-top").addClass('extra-gap');
     return false;
-});    
+});
 $(".header4-btn").click( function(){
     $("header").attr('class',"");
     $("header").addClass('header4');
     $(".page-top").removeClass('extra-gap');
     return false;
-});    
+});
 $(".header5-btn").click( function(){
     $("header").attr('class',"");
     $("header").addClass('header5');
     $(".page-top").addClass('extra-gap');
     return false;
-});    
+});
 $(".header6-btn").click( function(){
     $("header").attr('class',"");
     $("header").addClass('header6');
     $(".page-top").addClass('extra-gap');
     return false;
-});    
+});
 $(".header7-btn").click( function(){
     $("header").attr('class',"");
     $("header").addClass('header7');
     $(".page-top").addClass('extra-gap');
     return false;
-});    
+});
 $(".header8-btn").click( function(){
     $("header").attr('class',"");
     $("header").addClass('header8');
     $(".page-top").removeClass('extra-gap');
     return false;
-});    
+});
 $(".header9-btn").click( function(){
     $("header").attr('class',"");
     $("header").addClass('header9');
     $(".page-top").addClass('extra-gap');
     return false;
-});    
+});
 
 
 
 var e = new Date( "01/31/2015 12:00:00");
- e.setDate(e.getDate());                
+ e.setDate(e.getDate());
     var dd = e.getDate();
     var mm = e.getMonth() + 1;
     var y = e.getFullYear();
    var h = e.getHours();
    var m = e.getMinutes();
    var s = e.getSeconds();
-   
+
     var futureFormattedDate = mm + "/" + dd + "/" + y + " "+ h + ":" + m + ":" + s ;
 console.log(futureFormattedDate);
 
@@ -216,7 +216,7 @@ $('.headercounter').downCount({
 });
 
 
-/*** WIDE AND BOXED LAYOUT ***/      
+/*** WIDE AND BOXED LAYOUT ***/
 $('.boxed').click(function() {
     $('.theme-layout').addClass("boxed");
     $('body').css('background-image', 'url(images/pat1.png)');
@@ -274,7 +274,7 @@ foo.poptrox({
 });
 
 
-/*** AJAX CONTACT FORM ***/ 
+/*** AJAX CONTACT FORM ***/
 $('#contactform').submit(function(){
     var action = $(this).attr('action');
     $("#message").slideUp(750,function() {
@@ -302,5 +302,3 @@ $('#contactform').submit(function(){
 });
 
 });
-
-
