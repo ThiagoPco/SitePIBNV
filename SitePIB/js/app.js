@@ -11,14 +11,15 @@ var app = angular.module('PIBWebApp', [
 app.config(['$routeProvider', function ($routeProvider) {
   $routeProvider
     // Home
-    .when("/", {templateUrl: "partials/home.html", controller: "HomeController"})
+    .when("/", {templateUrl: "partials/home.html", controller: "HomeController", cache: false})
 
     //Parceiros
     .when("/abni", {templateUrl: "partials/abni_detalhe.html", controller: "HomeController", cache: false})
     .when("/canaa", {templateUrl: "partials/canaa_detalhe.html", controller: "HomeController", cache: false})
 
     // Eventos
-    .when("/igreja/detalhe", {templateUrl: "partials/church-story-single.html", controller: "HomeController", cache: false})
+    //.when("/igreja/detalhe", {templateUrl: "partials/church-story-single.html", controller: "HomeController", cache: false})
+    .when("/igreja/detalhe", {templateUrl: "partials/church-story-single-generica.html", controller: "HomeController", cache: false})
     .when("/igreja/detalhe/generica", {templateUrl: "partials/church-story-single-generica.html", controller: "HomeController", cache: false})
 
     // Eventos
@@ -32,7 +33,7 @@ app.config(['$routeProvider', function ($routeProvider) {
     .when("/sermoes", {templateUrl: "partials/sermon.html", controller: "SermoesController", cache: false})
 
     //Agenda Semanal
-    .when("/agenda", {templateUrl: "partials/agenda.html", controller: "AgendaController", cache: false})
+    .when("/agenda", {templateUrl: "partials/agenda_semanal.html", controller: "AgendaController", cache: false})
 
     //Ministerios
     .when("/ministerios", {templateUrl: "partials/ministry.html", controller: "MinisterioController", cache: false})
