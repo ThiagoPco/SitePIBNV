@@ -27,7 +27,7 @@
 	  padding-bottom: 1%;
 	  padding-top: 1%;
     padding-left:1%;
-    border: 1px solid #0d8ce6;
+    border: 1px solid #b78116;
 }
 
 /* Background-color of the odd rows */
@@ -41,15 +41,15 @@
 }
 
 .containerAgenda th {
-	  background-color: #0d8ce6;
+	  background-color: #b78116;
 }
 
 .containerAgenda td:hover {
-  background-color: #0d8ce6;
+  background-color: #b78116;
   color: #ffffff;
   font-weight: bold;
 
-  box-shadow: #016cb7 -1px 1px, #016cb7 -2px 2px, #016cb7 -3px 3px, #016cb7 -4px 4px, #016cb7 -5px 5px, #016cb7 -6px 6px;
+  box-shadow: #a06e0b -1px 1px, #a06e0b -2px 2px, #a06e0b -3px 3px, #a06e0b -4px 4px, #a06e0b -5px 5px, #a06e0b -6px 6px;
   transform: translate3d(6px, -6px, 0);
 
   transition-delay: 0s;
